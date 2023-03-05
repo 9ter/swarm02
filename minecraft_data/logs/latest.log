@@ -186,3 +186,4 @@
 [15:13:49] [Server thread/INFO]: Starting remote control listener
 [15:13:49] [Server thread/INFO]: Thread RCON Listener started
 [15:13:49] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[15:14:29] [Server thread/WARN]: handleDisconnection() called twice
