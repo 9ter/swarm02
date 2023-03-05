@@ -188,3 +188,10 @@
 [15:13:49] [Server thread/INFO]: RCON running on 0.0.0.0:25575
 [15:14:29] [Server thread/WARN]: handleDisconnection() called twice
 [15:15:01] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11580ms or 231 ticks behind
+[15:17:09] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[15:17:09] [Server thread/INFO]: [Rcon: Stopping the server]
+[15:17:09] [Server thread/INFO]: Stopping server
+[15:17:09] [Server thread/INFO]: Saving players
+[15:17:09] [Server thread/INFO]: Saving worlds
+[15:17:09] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[15:17:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
