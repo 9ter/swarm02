@@ -1,3 +1,11 @@
+## awaresome-compose 
+[minecraft](https://github.com/docker/awesome-compose/tree/master/minecraft)
+
+## wakatime project
+[wakatime](https://wakatime.com/@spcn25/projects/mwauyfhoid?start=2023-02-27&end=2023-03-05)
+
+
+
 ## Minecraft server
 This example defines a basic setup for a Minecraft server. More details on the Minecraft server docker image can be found [here](https://github.com/itzg/docker-minecraft-server/blob/master/README.md).
 
@@ -17,7 +25,7 @@ services:
      - "25565:25565"
     ...
   volumes:
-     - "~/minecraft_data:/data"
+     - "../minecraft_data:/data"
 ```
 
 When deploying this setup, docker compose maps the Minecraft server port 25565 to
