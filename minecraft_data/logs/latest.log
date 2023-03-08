@@ -1,66 +1,101 @@
-[00:09:32] [Server thread/WARN]: handleDisconnection() called twice
-[01:21:51] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 17814ms or 356 ticks behind
-[01:56:39] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12604ms or 252 ticks behind
-[02:02:39] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 20625ms or 412 ticks behind
-[02:18:12] [Server thread/WARN]: handleDisconnection() called twice
-[02:47:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 14396ms or 287 ticks behind
-[02:50:54] [Server thread/WARN]: handleDisconnection() called twice
-[02:56:32] [Server thread/WARN]: handleDisconnection() called twice
-[03:57:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 14437ms or 288 ticks behind
-[04:32:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 19567ms or 391 ticks behind
-[04:44:54] [Server thread/WARN]: handleDisconnection() called twice
-[04:47:40] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12658ms or 253 ticks behind
-[05:25:37] [Server thread/WARN]: handleDisconnection() called twice
-[05:47:06] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5114ms or 102 ticks behind
-[06:03:38] [Server thread/WARN]: handleDisconnection() called twice
-[06:08:49] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 9501ms or 190 ticks behind
-[06:15:44] [Server thread/WARN]: handleDisconnection() called twice
-[06:35:01] [Server thread/WARN]: handleDisconnection() called twice
-[06:46:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 16613ms or 332 ticks behind
-[06:58:44] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 19245ms or 384 ticks behind
-[07:00:59] [Server thread/WARN]: handleDisconnection() called twice
-[07:05:37] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6173ms or 123 ticks behind
-[07:13:28] [Server thread/WARN]: handleDisconnection() called twice
-[07:43:54] [Server thread/WARN]: handleDisconnection() called twice
-[08:15:41] [Server thread/WARN]: handleDisconnection() called twice
-[08:16:29] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11622ms or 232 ticks behind
-[08:20:00] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 17484ms or 349 ticks behind
-[08:42:19] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 15823ms or 316 ticks behind
-[08:57:07] [Server thread/WARN]: handleDisconnection() called twice
-[09:01:44] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 17586ms or 351 ticks behind
-[09:28:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12630ms or 252 ticks behind
-[09:30:18] [Server thread/WARN]: handleDisconnection() called twice
-[09:42:46] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 13666ms or 273 ticks behind
-[10:01:14] [Server thread/WARN]: handleDisconnection() called twice
-[10:31:09] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 23636ms or 472 ticks behind
-[10:39:06] [Server thread/WARN]: handleDisconnection() called twice
-[10:44:51] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 16930ms or 338 ticks behind
-[10:50:30] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 14061ms or 281 ticks behind
-[11:08:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 16338ms or 326 ticks behind
-[11:16:12] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 25050ms or 501 ticks behind
-[12:25:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10963ms or 219 ticks behind
-[12:35:04] [Server thread/WARN]: handleDisconnection() called twice
-[12:36:59] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12808ms or 256 ticks behind
-[14:13:53] [Server thread/WARN]: handleDisconnection() called twice
-[14:26:46] [Server thread/WARN]: handleDisconnection() called twice
-[15:02:13] [Server thread/WARN]: handleDisconnection() called twice
-[15:06:43] [Server thread/WARN]: handleDisconnection() called twice
-[15:15:07] [Server thread/WARN]: handleDisconnection() called twice
-[15:23:30] [Server thread/WARN]: handleDisconnection() called twice
-[15:35:40] [Server thread/WARN]: handleDisconnection() called twice
-[16:18:02] [Server thread/WARN]: handleDisconnection() called twice
-[16:58:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 15130ms or 302 ticks behind
-[17:09:31] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2310ms or 46 ticks behind
-[17:13:51] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 16144ms or 322 ticks behind
-[17:20:28] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 22218ms or 444 ticks behind
-[18:57:02] [Server thread/WARN]: handleDisconnection() called twice
-[18:59:36] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11445ms or 228 ticks behind
-[19:11:26] [Server thread/WARN]: handleDisconnection() called twice
-[19:30:08] [Server thread/WARN]: handleDisconnection() called twice
-[19:57:11] [Server Watchdog/ERROR]: A single server tick took 60.00 seconds (should be max 0.05)
-[19:57:11] [Server Watchdog/ERROR]: Considering it to be crashed, server will forcibly shutdown.
-[19:57:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 118898ms or 2377 ticks behind
-[19:57:15] [Server Watchdog/ERROR]: This crash report has been saved to: /data/./crash-reports/crash-2023-03-06_19.57.15-server.txt
-[19:57:15] [Server thread/INFO]: Stopping server
-[19:57:15] [Server thread/INFO]: Saving players
-[19:57:15] [Server thread/INFO]: Saving worlds
+[15:15:35] [ServerMain/INFO]: Building unoptimized datafixer
+[15:15:39] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:15:45] [ServerMain/INFO]: Loaded 7 recipes
+[15:15:46] [ServerMain/INFO]: Loaded 1179 advancements
+[15:15:48] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[15:15:48] [Server thread/INFO]: Loading properties
+[15:15:48] [Server thread/INFO]: Default game type: SURVIVAL
+[15:15:48] [Server thread/INFO]: Generating keypair
+[15:15:48] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:15:48] [Server thread/INFO]: Using epoll channel type
+[15:15:48] [Server thread/INFO]: Preparing level "world"
+[15:16:00] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:13] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:14] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:14] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:15] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:15] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:16] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:17] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:17] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:17] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:18] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:18] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:19] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:20] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:20] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:20] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:21] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:21] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:24] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[15:16:24] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[15:16:24] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[15:16:24] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[15:16:24] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[15:16:24] [Worker-Main-8/INFO]: Preparing spawn area: 54%
+[15:16:25] [Worker-Main-8/INFO]: Preparing spawn area: 72%
+[15:16:25] [Worker-Main-8/INFO]: Preparing spawn area: 73%
+[15:16:26] [Worker-Main-8/INFO]: Preparing spawn area: 73%
+[15:16:26] [Worker-Main-8/INFO]: Preparing spawn area: 73%
+[15:16:27] [Worker-Main-8/INFO]: Preparing spawn area: 77%
+[15:16:27] [Worker-Main-8/INFO]: Preparing spawn area: 77%
+[15:16:28] [Worker-Main-8/INFO]: Preparing spawn area: 78%
+[15:16:28] [Worker-Main-8/INFO]: Preparing spawn area: 79%
+[15:16:29] [Worker-Main-8/INFO]: Preparing spawn area: 81%
+[15:16:30] [Worker-Main-8/INFO]: Preparing spawn area: 82%
+[15:16:30] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:16:30] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:16:31] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:16:31] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:16:32] [Worker-Main-8/INFO]: Preparing spawn area: 83%
+[15:16:33] [Worker-Main-8/INFO]: Preparing spawn area: 84%
+[15:16:33] [Worker-Main-8/INFO]: Preparing spawn area: 84%
+[15:16:33] [Worker-Main-8/INFO]: Preparing spawn area: 84%
+[15:16:34] [Worker-Main-8/INFO]: Preparing spawn area: 86%
+[15:16:34] [Worker-Main-8/INFO]: Preparing spawn area: 86%
+[15:16:35] [Worker-Main-8/INFO]: Preparing spawn area: 87%
+[15:16:35] [Worker-Main-8/INFO]: Preparing spawn area: 88%
+[15:16:36] [Worker-Main-8/INFO]: Preparing spawn area: 89%
+[15:16:36] [Worker-Main-8/INFO]: Preparing spawn area: 89%
+[15:16:37] [Worker-Main-8/INFO]: Preparing spawn area: 90%
+[15:16:38] [Worker-Main-8/INFO]: Preparing spawn area: 90%
+[15:16:38] [Worker-Main-8/INFO]: Preparing spawn area: 92%
+[15:16:38] [Worker-Main-8/INFO]: Preparing spawn area: 93%
+[15:16:39] [Worker-Main-8/INFO]: Preparing spawn area: 94%
+[15:16:39] [Worker-Main-8/INFO]: Preparing spawn area: 95%
+[15:16:40] [Worker-Main-8/INFO]: Preparing spawn area: 95%
+[15:16:40] [Worker-Main-8/INFO]: Preparing spawn area: 96%
+[15:16:41] [Worker-Main-8/INFO]: Preparing spawn area: 97%
+[15:16:41] [Worker-Main-8/INFO]: Preparing spawn area: 98%
+[15:16:42] [Worker-Main-8/INFO]: Preparing spawn area: 99%
+[15:16:42] [Server thread/INFO]: Time elapsed: 42007 ms
+[15:16:42] [Server thread/INFO]: Done (54.008s)! For help, type "help"
+[15:16:42] [Server thread/INFO]: Starting remote control listener
+[15:16:43] [Server thread/INFO]: Thread RCON Listener started
+[15:16:43] [Server thread/INFO]: RCON running on 0.0.0.0:25575
