@@ -1,90 +1,128 @@
+## REFERENCE
+[github](https://github.com/ALEXANDERSSONN)
 ## awaresome-compose 
-[minecraft](https://github.com/docker/awesome-compose/tree/master/minecraft)
+[django](https://github.com/docker/awesome-compose/tree/master/django)
 
 ## wakatime project
-[wakatime](https://wakatime.com/@spcn25/projects/mwauyfhoid?start=2023-02-27&end=2023-03-05)
+[wakatime](https://wakatime.com/@spcn25/projects/glewvkqqyj?start=2023-02-27&end=2023-03-05)
 
 
 
-## Minecraft server
-This example defines a basic setup for a Minecraft server. More details on the Minecraft server docker image can be found [here](https://github.com/itzg/docker-minecraft-server/blob/master/README.md).
-
-Project structure:
+# BUILD-IMAGE & TAG
+- คำสั่งการ Build image
 ```
-.
-├── compose.yaml
-└── README.md
+docker compose "django/compose.yaml" up -d --build
+```
+- คำสั่งการ Tag
+```
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
 
-[_compose.yaml_](compose.yaml)
+# PUSH IMAGE TO DOCKER HUB 
+- คำสั่งเข้าสู่ระบบ Docker ใน VSCODE
 ```
+docker login
+```
+- คำสั่ง Push Image To Docker Hub
+```
+docker push TARGET_IMAGE[:TAG]
+```
+
+# CREATE STACK DEPLOY
+- สร้างไฟล์ compose.yaml
+```
+version: '3.7'
+
 services:
- minecraft:
-   image: itzg/minecraft-server
-   ports:
-     - "25565:25565"
-    ...
-  volumes:
-     - "../minecraft_data:/data"
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  web:
+    image: TARGET_IMAGE[:TAG]
+    volumes:
+      - static_data:/usr/src/app/static
+    ports:
+      - "8088:8000"
+    depends_on:
+      - db
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+      update_config:
+        delay: 5s
+        parallelism: 1
+        order: start-first
+
+volumes:
+  db_data:
+  static_data:
+
+networks:
+  default:
+    driver: overlay
+    attachable: true
+```
+- นำ compose.yaml ไป Stack Deploy on local
+
+# SWARM CLUSTER
+- Revert Proxy compose.yaml
+```
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    networks:
+      - default
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  web:
+    image: TARGET_IMAGE[:TAG]
+    networks:
+     - webproxy
+     - default
+    volumes:
+      - static_data:/usr/src/app/static
+    depends_on:
+      - db
+    deploy:
+      replicas: 1
+      labels:
+        - traefik.docker.network=webproxy
+        - traefik.enable=true
+        - traefik.http.routers.${APPNAME}-https.entrypoints=websecure
+        - traefik.http.routers.${APPNAME}-https.rule=Host("${APPNAME}$ URL ")
+        - traefik.http.routers.${APPNAME}-https.tls.certresolver=default
+        - traefik.http.services.${APPNAME}.loadbalancer.server.port=8000
+
+
+      restart_policy:
+        condition: any
+      update_config:
+        delay: 5s
+        parallelism: 1
+        order: start-first
+
+volumes:
+  db_data:
+  static_data:
+
+networks:
+  default:
+    driver: overlay
+    attachable: true
+  webproxy:
+    external: true
 ```
 
-When deploying this setup, docker compose maps the Minecraft server port 25565 to
-the same port of the host as specified in the compose file. The Minecraft client application can connect to this port directly.
-This example maps the Minecraft data folder holding all game storage to ~/minecraft_data on the host.
-
-## Deploy with docker compose
-
-```
-$ mkdir -p ~/minecraft_data
-$ docker compose up -d
-WARNING: Some services (minecraft) use the 'deploy' key, which will be ignored. Compose does not support 'deploy' configuration - use `docker stack deploy` to deploy to a swarm.
-Creating network "minecraft_default" with the default driver
-Creating minecraft_minecraft_1 ... done
-```
-
-Note: this is using a volume in order to store Minecraft server data, that can be recovered if you remove the container and restart it. 
-
-## Expected result
-
-Check containers are running and the port mapping:
-
-```
-$ docker ps
-CONTAINER ID        IMAGE                   COMMAND             CREATED             STATUS                   PORTS                                 NAMES
-7f696c2fb101        itzg/minecraft-server   "/start"            5 minutes ago       Up 5 minutes (healthy)
-```
-
-After running `docker-compose up`, the minecraft server takes a bit of time to initialize Minecraft world. You can follow the progress:
-
-```
-$ docker compose logs
-...
-minecraft_1  | [15:06:39] [Worker-Main-6/INFO]: Preparing spawn area: 94%
-minecraft_1  | [15:06:39] [Worker-Main-7/INFO]: Preparing spawn area: 94%
-minecraft_1  | [15:06:39] [Server thread/INFO]: Time elapsed: 25620 ms
-minecraft_1  | [15:06:39] [Server thread/INFO]: Done (35.526s)! For help, type "help"
-minecraft_1  | [15:06:39] [Server thread/INFO]: Starting remote control listener
-minecraft_1  | [15:06:39] [Server thread/INFO]: Thread RCON Listener started
-minecraft_1  | [15:06:39] [RCON Listener #1/INFO]: RCON running on 0.0.0.0:25575
-```
-
-Once it is initialized, run your Minecraft application, hit "Play", then "Multiplayer" and "Add server"
-![add server](screenshots/click-add-server.png)
-
- Specify your new server IP : localhost:25565
- ![server configuration](screenshots/add-server-config.png)
-
- You can then start playing
- ![ready to play](screenshots/ready-to-play.png)
-
-Stop and remove the containers
-
-```
-$ docker compose down
-```
-
-To delete all data, remove all named volumes by passing the -v arguments:
-
-```
-$ docker compose down -v
-```
+![image](https://user-images.githubusercontent.com/98762543/224471831-22d8396b-2c5b-4724-999c-69f6225a548f.png)
